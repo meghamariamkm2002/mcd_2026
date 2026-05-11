@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>Unifying Scientific Communication - Megha, Vineeth, Jawahar</title>
   
   
   
@@ -215,24 +215,25 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                      <a href="2026124838.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
                       </a>
                     </span>
-
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                      <span class="link-block">
+                        <a href="40322_supp.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Supplementary</span>
+                        </a>
                       </span>
-                      <span>Supplementary</span>
-                    </a>
                   </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
@@ -248,7 +249,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2605.05831" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -275,7 +276,8 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            The communication of scientific knowledge has become increasingly multimodal, spanning text, visuals, and speech through materials such as research papers, slides, and recorded presentations. These different representations collectively convey a study’s reasoning, results, and insights, offering complementary perspectives that enrich understanding. However, despite their shared purpose, such materials are rarely connected in a structured way. The absence of explicit links across formats makes it difficult to trace how concepts, visuals, and explanations correspond, limiting unified exploration and analysis of research content. To address this gap, we introduce the Multimodal Conference Dataset (MCD), the first benchmark that integrates research papers, presentation videos, explanatory videos, and slides from the same works. We evaluate a range of embedding-based and vision–language models to assess their ability to discover fine-grained cross-format correspondences, establishing the first systematic benchmark for this task. Our results show that vision–language models are robust but struggle with fine-grained alignment, while embedding-based models capture text–visual correspondences well but equations and symbolic content form distinct clusters in the embedding space. These findings highlight both the strengths and limitations of current approaches and point to key directions for future research in multimodal scientific understanding.
+            The communication of scientific knowledge has become increasingly multimodal, spanning text, visuals, and speech through materials such as research papers, slides, and recorded presentations. These different representations collectively convey a study’s reasoning, results, and insights, offering complementary perspectives that enrich understanding. However, despite their shared purpose, such materials are rarely connected in a structured way. The absence of explicit links across formats makes it difficult to trace how concepts, visuals, and explanations correspond, limiting unified exploration and analysis of research content.
+To address this gap, we introduce the \textit{Multimodal Conference Dataset (MCD)}, the first benchmark that integrates research papers, presentation videos, explanatory videos, and slides from the same works. We evaluate a range of embedding-based and vision–language models to assess their ability to discover fine-grained cross-format correspondences, establishing the first systematic benchmark for this task. Our results show that vision–language models are robust but struggle with fine-grained alignment, while embedding-based models capture text–visual correspondences well but equations and symbolic content form distinct clusters in the embedding space. These findings highlight both the strengths and limitations of current approaches and point to key directions for future research in multimodal scientific understanding. 
           </p>
         </div>
       </div>
@@ -322,12 +324,13 @@
               <!-- EV -->
               <tr><td colspan="10"><b>Traversal: EV → PP</b></td></tr>
 
-              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>47.27</td><td>41.52</td><td>40.16</td><td>61.40</td><td>64.90</td><td>63.16</td><td>64.98</td><td>75</td></tr>
-              <tr><td>E5-V</td><td>8.4B</td><td>50.00</td><td>49.09</td><td>47.53</td><td>62.96</td><td>64.95</td><td>38.46</td><td>49.79</td><td>46.43</td></tr>
+              <!-- EV -->
+              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>47.27</td><td>41.52</td><td>40.37</td><td>61.40</td><td>63.80</td><td>63.16</td><td>67.01</td><td>12.50</td></tr>
+              <tr><td>E5-V</td><td>8.4B</td><td>50.29</td><td>49.05</td><td>47.50</td><td>62</td><td>64.40</td><td>39.71</td><td>50.84</td><td>44</td></tr>
               <tr><td>GME-Qwen2VL-2B (w/o instr.)</td><td>2.2B</td><td>53.64</td><td>48.10</td><td>46.28</td><td>54.39</td><td>56.96</td><td>57.89</td><td>61.75</td><td>6.25</td></tr>
               <tr><td>GME-Qwen2VL-2B (with instr.)</td><td>2.2B</td><td>53.64</td><td>50.21</td><td>49.70</td><td>50.88</td><td>55.23</td><td>52.63</td><td>61.84</td><td>6.25</td></tr>
-              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>47.27</td><td>44.90</td><td>45.18</td><td>38.60</td><td>45.67</td><td>47.37</td><td>47.90</td><td>62.50</td></tr>
-              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>50.91</td><td>48.19</td><td>46.47</td><td>47.37</td><td>51.30</td><td>47.37</td><td>53.26</td><td>62.50</td></tr>
+              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>47.27</td><td>44.90</td><td>45.18</td><td>38.60</td><td>45.67</td><td>47.37</td><td>47.90</td><td>62.5</td></tr>
+              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>50.91</td><td>48.19</td><td>46.47</td><td>47.37</td><td>51.30</td><td>47.37</td><td>53.26</td><td>62.5</td></tr>
               <tr><td>InternVL3.5-4B</td><td>4B</td><td>36.29</td><td>36.45</td><td>34.79</td><td>39.34</td><td>44.68</td><td>61.90</td><td>62.39</td><td>60</td></tr>
               <tr><td>InternVL3.5-38B</td><td>38B</td><td>39.09</td><td>40.72</td><td>40.71</td><td>47.37</td><td>55.12</td><td>84.21</td><td>86.78</td><td>75</td></tr>
               <tr><td>Qwen2.5-VL-32B</td><td>32B</td><td>34.55</td><td>37.19</td><td>38.98</td><td>43.86</td><td>48.72</td><td>73.68</td><td>81.61</td><td>100</td></tr>
@@ -335,14 +338,12 @@
               <tr><td><b>Gemini-2.5 Pro</b></td><td>-</td><td><b>62.73</b></td><td><b>60.84</b></td><td><b>60.28</b></td><td><b>71.93</b></td><td><b>77.89</b></td><td><b>94.74</b></td><td><b>88.63</b></td><td>75</td></tr>
 
               <!-- S -->
-              <tr><td colspan="10"><b>Traversal: S → PP</b></td></tr>
-
-              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>48.48</td><td>43.68</td><td>45.23</td><td>68.18</td><td>78.22</td><td>50.98</td><td>53.45</td><td>100</td></tr>
-              <tr><td>E5-V</td><td>8.4B</td><td>58.06</td><td>54.18</td><td>55.76</td><td>63.16</td><td>71.46</td><td>18.00</td><td>20.04</td><td>16.67</td></tr>
-              <tr><td>GME-Qwen2VL-2B (w/o instr.)</td><td>2.2B</td><td>58.18</td><td>53.44</td><td>54.38</td><td>75.00</td><td>83.60</td><td>68.63</td><td>70.54</td><td>25</td></tr>
-              <tr><td>GME-Qwen2VL-2B (with instr.)</td><td>2.2B</td><td>58.18</td><td>53.85</td><td>54.72</td><td>72.73</td><td>81.33</td><td>68.63</td><td>69.78</td><td>39.58</td></tr>
-              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>52.12</td><td>49.76</td><td>51.40</td><td>77.27</td><td>83.01</td><td>66.67</td><td>66.39</td><td>0</td></tr>
-              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>55.15</td><td>52.11</td><td>54.01</td><td>77.27</td><td>85.88</td><td>68.63</td><td>67.59</td><td>0</td></tr>
+              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>47.88</td><td>44.02</td><td>45.03</td><td>68.18</td><td>78.22</td><td>50.98</td><td>54.21</td><td>25</td></tr>
+              <tr><td>E5-V</td><td>8.4B</td><td>56.97</td><td>54.02</td><td>54.80</td><td>63.64</td><td>70.81</td><td>43.14</td><td>41.82</td><td>0</td></tr>
+              <tr><td>GME-Qwen2VL-2B (w/o instr.)</td><td>2.2B</td><td>58.79</td><td>53.58</td><td>54.48</td><td>75</td><td>83.60</td><td>68.63</td><td>70.54</td><td>8.33</td></tr>
+              <tr><td>GME-Qwen2VL-2B (with instr.)</td><td>2.2B</td><td>58.18</td><td>54.08</td><td>54.76</td><td>72.73</td><td>81.33</td><td>68.63</td><td>69.78</td><td>12.50</td></tr>
+              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>52.12</td><td>50</td><td>51.45</td><td>77.27</td><td>83.01</td><td>66.67</td><td>66.39</td><td>0</td></tr>
+              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>55.15</td><td>52.35</td><td>53.89</td><td>77.27</td><td>85.88</td><td>68.63</td><td>68.35</td><td>0</td></tr>
               <tr><td>InternVL3.5-4B</td><td>4B</td><td>33.33</td><td>35.92</td><td>37.71</td><td>40.91</td><td>54.69</td><td>50.98</td><td>56.97</td><td>91.67</td></tr>
               <tr><td>InternVL3.5-38B</td><td>38B</td><td>42.42</td><td>44.58</td><td>47.55</td><td>50.00</td><td>62.03</td><td>70.59</td><td>75.06</td><td>91.67</td></tr>
               <tr><td>Qwen2.5-VL-32B</td><td>32B</td><td>46.06</td><td>45.60</td><td>50.60</td><td>59.09</td><td>70.01</td><td>64.71</td><td>73.17</td><td>100</td></tr>
@@ -350,20 +351,17 @@
               <tr><td><b>Gemini-2.5 Pro</b></td><td>-</td><td><b>66.06</b></td><td><b>62.85</b></td><td><b>64.87</b></td><td><b>79.55</b></td><td><b>85.84</b></td><td><b>90.20</b></td><td><b>88.40</b></td><td>100</td></tr>
 
               <!-- PV -->
-              <tr><td colspan="10"><b>Traversal: PV → PP</b></td></tr>
-
-              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>47.03</td><td>43.43</td><td>43.74</td><td>58.70</td><td>71.35</td><td>49.02</td><td>51.02</td><td>100</td></tr>
-              <tr><td>E5-V</td><td>8.4B</td><td>54.05</td><td>51.42</td><td>54.07</td><td>60.87</td><td>69.94</td><td>17.65</td><td>20.40</td><td>0</td></tr>
-              <tr><td>GME-Qwen2VL-2B (w/o instr.)</td><td>2.2B</td><td>52.97</td><td>47.85</td><td>48.54</td><td>65.22</td><td>76.72</td><td>49.02</td><td>49.70</td><td>50</td></tr>
-              <tr><td>GME-Qwen2VL-2B (with instr.)</td><td>2.2B</td><td>55.14</td><td>48.82</td><td>49.02</td><td>67.39</td><td>77.52</td><td>45.10</td><td>50.05</td><td>41.67</td></tr>
-              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>55.14</td><td>49.39</td><td>49.76</td><td>69.57</td><td>79.70</td><td>60.78</td><td>61.26</td><td>37.50</td></tr>
-              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>54.59</td><td>48.64</td><td>49.88</td><td>65.22</td><td>78.40</td><td>62.75</td><td>62.47</td><td>56.25</td></tr>
+              <tr><td>ColQwen2-VL</td><td>2.21B</td><td>46.49</td><td>41.16</td><td>41.90</td><td>47.83</td><td>62.91</td><td>50.98</td><td>54.21</td><td>25</td></tr>
+              <tr><td>E5-V</td><td>8.4B</td><td>54.05</td><td>51.29</td><td>53.91</td><td>60.87</td><td>69.94</td><td>47.06</td><td>48.49</td><td>0</td></tr>
+              <tr><td>GME-Qwen2VL-2B (w/o instr.)</td><td>2.2B</td><td>52.97</td><td>48.06</td><td>48.57</td><td>65.22</td><td>76.72</td><td>49.02</td><td>49.70</td><td>4.17</td></tr>
+              <tr><td>GME-Qwen2VL-2B (with instr.)</td><td>2.2B</td><td>55.14</td><td>49.24</td><td>49.85</td><td>67.39</td><td>76.15</td><td>45.10</td><td>48.53</td><td>4.17</td></tr>
+              <tr><td>GME-Qwen2VL-7B (w/o instr.)</td><td>8.2B</td><td>55.14</td><td>49.39</td><td>49.63</td><td>69.57</td><td>79.70</td><td>60.78</td><td>61.26</td><td>0</td></tr>
+              <tr><td>GME-Qwen2VL-7B (with instr.)</td><td>8.2B</td><td>55.68</td><td>49.30</td><td>50.02</td><td>65.22</td><td>78.40</td><td>62.75</td><td>62.47</td><td>4.17</td></tr>
               <tr><td>InternVL3.5-4B</td><td>4B</td><td>46.56</td><td>45.88</td><td>47.32</td><td>59.18</td><td>65.12</td><td>37.25</td><td>38.21</td><td>87.50</td></tr>
               <tr><td>InternVL3.5-38B</td><td>38B</td><td>49.73</td><td>47.70</td><td>48.98</td><td>47.83</td><td>55.21</td><td>75.00</td><td>75.00</td><td>100</td></tr>
               <tr><td>Qwen2.5-VL-32B</td><td>32B</td><td>44.86</td><td>46.39</td><td>49.41</td><td>52.17</td><td>65.05</td><td>74.51</td><td>80.70</td><td>100</td></tr>
               <tr><td><b>Gemini-2.5 Pro</b></td><td>-</td><td><b>59.46</b></td><td><b>58.66</b></td><td><b>61.20</b></td><td><b>78.26</b></td><td><b>81.53</b></td><td><b>86.27</b></td><td><b>89.99</b></td><td>100</td></tr>
               <tr><td>Gemini-2.5 Flash</td><td>-</td><td>59.46</td><td>56.22</td><td>57.22</td><td>76.09</td><td>81.57</td><td>82.35</td><td>86.06</td><td>100</td></tr>
-
             </tbody>
           </table>
         </div>
@@ -384,7 +382,7 @@
         <img src="static/images/Stat.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          Statistics of the Explanation and Presentation sets:} (a) and (d) show the distribution of algorithms, equations, tables, and figures in the papers; (b) presents the word cloud generated from ASR transcripts; (e) presents the word cloud generated from slide text and ASR transcripts; (c) and (f) depict the number of videos per segment category.
+          Statistics of the Explanation and Presentation sets: (a) and (d) show the distribution of algorithms, equations, tables, and figures in the papers; (b) presents the word cloud generated from ASR transcripts; (e) presents the word cloud generated from slide text and ASR transcripts; (c) and (f) depict the number of videos per segment category.
         </h2>
       </div>
       <div class="item">
@@ -398,14 +396,14 @@
         <!-- Your image here -->
         <img src="static/images/Comp.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Illustrates the performance of embedding-based and VLM-based models across all three traversal settings (EV $\to$ PP, S $\to$ PP, PV $\to$ PP). NDCG@2 scores are used for paragraphs, figures, and equations. For algorithms, recall is calculated using a threshold of 0.6.
+          Illustrates the performance of embedding-based and VLM-based models across all three traversal settings (EV → PP, S → PP, and PV → PP). NDCG@2 scores are used for paragraphs, figures, and equations. For algorithms, recall is calculated using a threshold of 0.6.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/E.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Visualization of query and candidate embeddings for representative instances across all three settings: EX $\to$ PP, S $\to$ PP, and PV $\to$ PP. Zoom in for a better view.
+        Visualization of query and candidate embeddings for representative instances across all three settings: EV → PP, S → PP, and PV → PP. Zoom in for a better view.
       </h2>
     </div>
   </div>
